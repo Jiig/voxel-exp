@@ -61,6 +61,6 @@ Exp.prototype.toNext = function() {
     return this.curve(this.cl) - this.cexp;
 };
 
-Exp.prototype.precent = function() {
+Exp.prototype.percent = function() {
     return this.cexp / this.curve(this.cl) * 100.0;
 };
