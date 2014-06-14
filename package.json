@@ -1,6 +1,6 @@
 {
   "name": "voxel-exp",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Simple experience point system for voxeljs",
   "main": "index.js",
   "scripts": {
