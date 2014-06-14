@@ -27,7 +27,7 @@ function Exp(game, opts) {
 
 inherits(Exp, em);
 
-Exp.enable = function() {};
+Exp.prototype.enable = function() {};
 
 Exp.inc = function(v) {
     this.cexp += v;
