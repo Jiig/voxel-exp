@@ -8,10 +8,10 @@ Simple experience point and leveling system for voxeljs.
 Load the modules with voxel-plugins
 
 ##Options
-minLevel (1)
-maxLevel (99)
-startLevel (1)
-canDeLevel (false) - Whether or not you can lose levels
+* minLevel (1)
+* maxLevel (99)
+* startLevel (1)
+* canDeLevel (false) - Whether or not you can lose levels
 
 ##Usage
 * inc(v) - Increaes total exp
