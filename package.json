@@ -1,0 +1,26 @@
+{
+  "name": "voxel-exp",
+  "version": "0.0.1",
+  "description": "Simple experience point system for voxeljs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jiig/voxel-exp"
+  },
+  "keywords": [
+    "voxel"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jiig/voxel-exp/issues"
+  },
+  "homepage": "https://github.com/Jiig/voxel-exp",
+  "devDependencies": {
+    "events": "^1.0.1",
+    "inherits": "^2.0.1"
+  }
+}
