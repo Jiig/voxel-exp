@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Jiig/voxel-exp",
   "devDependencies": {
     "events": "^1.0.1",
-    "inherits": "^2.0.1"
+    "inherits": "^2.0.1",
+    "tape": "^2.13.3"
   }
 }
