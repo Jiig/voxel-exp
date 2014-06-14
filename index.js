@@ -44,7 +44,7 @@ Exp.prototype.dec = function(v) {
 };
 
 Exp.prototype.maybeLevel = function() {
-    if (this.cexp >= this.curve(this.cl+1)) {
+    if (this.cexp >= this.curve(this.cl)) {
         this.cl++;
         this.minExp = this.curve(this.cl-1);
         this.emit('levelup', this.cl);
@@ -53,7 +53,7 @@ Exp.prototype.maybeLevel = function() {
     if (this.canDeLevel && this.cexp < this.curve(this.cl-1)) {
         this.cl--;
         this.minExp = this.curve(this.cl-1);
-        this.emit('leveldown'. this.cl);
+        this.emit('leveldown', this.cl);
     }
 };
 
