@@ -29,21 +29,21 @@ inherits(Exp, em);
 
 Exp.prototype.enable = function() {};
 
-Exp.inc = function(v) {
+Exp.prototype.inc = function(v) {
     this.cexp += v;
     this.emit('exp', this.cexp);
     this.emit('expgain', v);
     this.maybeLevel();
 };
 
-Exp.dec = function(v) {
+Exp.prototype.dec = function(v) {
     this.cexp -= v;
     this.emit('exp', this.cexp);
     this.emit('exploss', v);
     this.maybeLevel();
 };
 
-Exp.maybeLevel = function() {
+Exp.prototype.maybeLevel = function() {
     if (this.cexp >= this.curve(this.cl+1)) {
         this.cl++;
         this.minExp = this.curve(this.cl-1);
@@ -57,10 +57,10 @@ Exp.maybeLevel = function() {
     }
 };
 
-Exp.toNext = function() {
+Exp.prototype.toNext = function() {
     return this.curve(this.cl) - this.cexp;
 };
 
-Exp.precent = function() {
+Exp.prototype.precent = function() {
     return this.cexp / this.curve(this.cl) * 100.0;
 };
