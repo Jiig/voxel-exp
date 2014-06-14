@@ -14,7 +14,7 @@ function defaults(t) {
     t.equals(p.minLevel, 1);
     t.equals(p.maxLevel, 99);
     t.equals(p.curve(p.cl), 500);
-    t.equals(p.toNext(), 100);
+    t.equals(p.toNext(), 500);
 
     t.end();
 };
