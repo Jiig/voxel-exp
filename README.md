@@ -18,6 +18,7 @@ Load the modules with voxel-plugins
 * dec(v) - Decreases total exp
 * toNext() - Returns exp required till next level
 * percent() - Returns percent exp of current level (ex: 80%)
+* currentLevel() - Returns the current level
 
 Events:
 * expgain - amount gained

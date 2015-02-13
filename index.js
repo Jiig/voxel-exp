@@ -43,6 +43,10 @@ Exp.prototype.dec = function(v) {
     this.maybeLevel();
 };
 
+Exp.prototype.currentLevel = function() {
+	return this.cl;
+};
+
 Exp.prototype.maybeLevel = function() {
     if (this.cexp >= this.curve(this.cl)) {
         this.cl++;
