@@ -13,7 +13,7 @@ function Exp(game, opts) {
     this.canDeLevel  = opts.canDeLevel || false;
 
     if (this.cl != 1) {
-        this.cexp = this.curve(cl-1);
+        this.cexp = this.curve(this.cl-1);
         this.minExp = this.cexp
     }
     else {
