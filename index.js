@@ -13,7 +13,7 @@ function Exp(game, opts) {
     this.canDeLevel  = opts.canDeLevel || false;
 
     if (this.cl != 1) {
-        this.cexp = this.curve(cl-1);
+        this.cexp = this.curve(this.cl-1);
         this.minExp = this.cexp
     }
     else {
@@ -41,6 +41,10 @@ Exp.prototype.dec = function(v) {
     this.emit('exp', this.cexp);
     this.emit('exploss', v);
     this.maybeLevel();
+};
+
+Exp.prototype.currentLevel = function() {
+	return this.cl;
 };
 
 Exp.prototype.maybeLevel = function() {
